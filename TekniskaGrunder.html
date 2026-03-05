@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hilding</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="../hem/main.html">Hem</a>
+        <a href="../hem/Lagar.html">Relevanta Lagar</a>
+        <a href="../hem/TekniskaGrunder.html">Tekniska Grunder</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <h2 class="outline-text">Teknsika Grunder</h2>
+      <p class="text">
+        <strong>OSI-modellen:</strong> <br /><br />
+
+        OSI-modellen används för att förklara hur kommunikation fungerar i
+        nätverk. Den består av sju lager som tillsammans hanterar allt från den
+        fysiska överföringen av data till hur information visas för användaren.
+        <br /><br />
+
+        Physical (fysiskt lager): Ansvarar för den faktiska överföringen av
+        data, till exempel genom kablar eller fiber. <br /><br />
+
+        Data Link: Delar upp data i “frames” och skickar dem inom ett lokalt
+        nätverk. Här sker även felkontroll och hantering av MAC-adresser.
+        <br /><br />
+
+        Network: Ansvarar för adressering och styr datapaket mellan nätverk med
+        hjälp av IP-adresser. <br /><br />
+
+        Transport: Ser till att kommunikationen är pålitlig, delar upp data i
+        segment och säkerställer att informationen når fram, till exempel via
+        TCP. <br /><br />
+
+        Session: Skapar separata kommunikationssessioner för olika program med
+        hjälp av portnummer, som port 80 för HTTP. <br /><br />
+
+        Presentation: Bestämmer hur data ska formateras och struktureras så att
+        både avsändare och mottagare förstår varandra. <br /><br />
+
+        Application: Lagret där användaren interagerar, till exempel via en
+        webbläsare som skickar och tar emot HTTP-förfrågningar. <br /><br />
+
+        Tillsammans visar OSI-modellen hur data rör sig från fysisk överföring
+        till applikation. <br /><br />
+
+        <img
+          class="img1"
+          src="../hem/osi_model_7_layers.png"
+          width="800  "
+          height="600"
+        />
+        <br />
+
+        <strong>Server–klient-modellen:</strong> <br /><br />
+
+        Server–klient-modellen visar hur kommunikation sker på internet.
+        <br /><br />
+
+        Server: En dator eller tjänst som tillhandahåller resurser, information
+        eller funktioner. <br /><br />
+
+        Klient: En enhet som begär dessa resurser, ofta en webbläsare. När en
+        användare besöker en webbsida skickar klienten en förfrågan till
+        servern, som sedan svarar med exempelvis en webbsida, en bild eller data
+        från en databas. <br /><br />
+
+        Modellen används i många sammanhang, till exempel HTTP/HTTPS för
+        webbsidor, SMTP för e-post och FTP för filöverföring. <br /><br />
+
+        <strong> Internet Protocol och IP-adresser:</strong> <br /><br />
+
+        IP (Internet Protocol) bestämmer hur data skickas, tas emot och
+        identifieras över ett nätverk. Varje enhet får en unik IP-adress. Det
+        finns två typer: IPv4 (32 bitar, t.ex. 192.168.1.1) och IPv6 (128 bitar,
+        hexadecimal notation). IP-adresser kan vara publika eller privata.
+        Routrar skickar paketen längs den mest effektiva vägen, och vid behov
+        delas stora paket upp i mindre delar. <br /><br />
+
+        <strong> DNS – Domain Name System:</strong> <br /><br />
+
+        DNS fungerar som internets telefonbok. Den översätter domännamn, som
+        google.se, till rätt IP-adress. Webbläsaren använder denna information
+        för att kontakta rätt server. DNS gör internet enklare att använda
+        eftersom man slipper memorera långa nummer. <br /><br />
+
+        <strong> HTTP och HTTPS: </strong><br /><br />
+
+        HTTP används för att överföra information mellan webbläsare och
+        webbservrar. Klienten skickar en request och servern svarar med en
+        response som innehåller HTML, bilder eller annan data. HTTP är inte
+        krypterat, så trafiken kan avlyssnas. HTTPS är den säkra versionen som
+        använder SSL/TLS för att kryptera trafiken och skydda information som
+        inloggningar eller betalningar.
+      </p>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>
